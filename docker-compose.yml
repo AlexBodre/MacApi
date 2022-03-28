@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  macapi:
+    image: ${DOCKER_REGISTRY-}macapi
+    build:
+      context: .
+      dockerfile: MacApi/Dockerfile
